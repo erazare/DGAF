@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="medieval, fabric, 1.19.2, 1.20.1, keef_dgaf, minecraft, modpack, curseforge, github, webmap, adventure, combat, explore, social, all-ages">
+	<meta name="author" content="Keef_DGAF">
+	<meta name="description" content="DGAF Development presents: Medieval Immersed [1.19.2 & 1.20.1] Immerse yourself in wonder!" />
+    <title>Medieval Immersed</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+      <a href="https://github.com/erazare/Legendary-Edition-v.1.20.1/wiki" class="desktop_navbar_link">Wiki</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
+      <a href="#about" class="desktop_navbar_link scroll">About Us</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll"></a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://github.com/erazare/Legendary-Edition-v.1.20.1/wiki">Wiki</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">About Us</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Our Servers</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/logo.png" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>Re-inventing Minecraft.</a>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">What we have</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder_1.png">
+            <a class="main2_feature_headline">Get the modpack !</a>
+            <a href="https://www.curseforge.com/minecraft/modpacks/medieval-immersed" class="main2_feature_text">Curseforge</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder_2.png">
+            <a class="main2_feature_headline">Install the requirements</a>
+            <a href="https://github.com/erazare/Legendary-Edition-v.1.20.1/releases" class="main2_feature_text">Download Here!</a>
+            <a href="https://www.youtube.com/watch?v=_pazFxHDSQM" class="main2_feature_text">Visual Tutorial</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder_3.png">
+            <a class="main2_feature_headline">Join the server</a>
+            <a class="main2_feature_text">Our servers connection pre-supplied.<br>Click and go!</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+            <a class="main2_feature_headline">Get involved</a>
+            <a class="main2_feature_text">Help spread the word<br>and attract followers</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder_5.png">
+            <a class="main2_feature_headline">Run your own server</a>
+            <a class="main2_feature_text">Dedicated Server builds<br>with Bisecthosting<br>available<br><center>use<a href="https://bisecthosting.com/keef_dgaf">keef_dgaf</a> to save 25%</center>
+          </div>
+        </div>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Join DGAF Development's Discord Community</a>
+		<widgetbot
+    server="989527039675600986"
+    channel="1085627648476188773"
+    width="800"
+    height="600"
+></widgetbot>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+     </div>
+  <div id="bluemap"></div>
+	    <div class="main4">
+        <a class="headline">View our live interactive map for the 1.20.1 server</a>
+	            <iframe class="main4_dc_widget" src="http://420.mcserver.ws:8100/" width="80%" height="600" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Who we are</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="media/zevai.gif">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
+              <a class="main5_admins_description_title" href="https://discordapp.com/users/288393183564398604">Keef_DGAF</a>
+              <a class="main5_admins_description">Owner<br>I am the sole developer</a>
+            </div>
+          </div>
+          <div class="main5_admins_div main5_admins_dev_type1">
+            <img class="main5_admins_img" alt="admin member img" src="media/queen.png">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
+              <a class="main5_admins_description_title" href="https://discordapp.com/users/1043983786192404540">queentiffany_22</a>
+              <a class="main5_admins_description">Divine Queen<br>Queen Tiffany is our lead moderator</a>
+            </div>
+          </div>
+        </div>
+        <div class="main5_supporter_div">
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://static-cdn.jtvnw.net/jtv_user_pictures/69db444f-3883-4f7f-adba-5ef48bce8e3c-profile_image-70x70.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Streamer]</a>
+              <a href="https://www.twitch.tv/djstarflight" class="main5_supporters_description_title">DJ Starflight</a>
+              <a class="main5_supporters_description">aka DjBishop, is our<br>resident streamer</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/yosemite-sam.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Beta-Tester]</a>
+              <a class="main5_admins_description_title" href="https://discordapp.com/users/615240637901570224">Voodooer</a>
+              <a class="main5_supporters_description">Our lead beta-tester,<br>you can find him<br>exploring the realms often.</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/Wario_angrer.gif">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Prophet]</a>
+              <a class="main5_admins_description_title" href="https://discordapp.com/users/189205984764362752">Mr.G</a>
+              <a class="main5_supporters_description">Spreading the word<br>like madness.</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/bismarck.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
+              <a class="main5_admins_description_title" href="https://discordapp.com/users/958201474477883403">Dr_Bismarck</a>
+              <a class="main5_supporters_description">Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">How to join<center></a>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">420.mcserver.ws</span>
+            <br>
+            <span class="main1_ipcopier_text2">1.20.1 server <br>Click to copy</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("play.example.com");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">420.mcserver.us</span>
+            <br>
+            <span class="main1_ipcopier_text2">1.19.2 server <br>Click to copy</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("play.example.com");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright_div">
+      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by Keef_DGAF 2023</a>
+    </footer>
+  </body>
+</html>
